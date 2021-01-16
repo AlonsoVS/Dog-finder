@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
+import './styles/Dog.css';
 
 class Dog extends Component {
 
     render() {
         return(
-            <>
-                <h1>{this.props.name}</h1>
-                <img src={this.props.src}/>
-                <h2 className="Dogage">{this.props.age}</h2>
-                {this.props.facts.map( fact => {return <h3 className="Dogfacts">{fact}</h3>} )}
-                <button className="Goback" onClick={this.props.history.goBack}>Go Back</button>
-            </>
+            <div className='Dog'>
+                <img className='Dog-img' src={this.props.src}/>
+                <h1 className='Dog-name' >{this.props.name}</h1>
+                <p className="Dog-age">{this.props.age} years old</p>
+                {this.props.facts.map( fact => {return <p className="Dog-facts">{fact}</p>} )}
+                <button className="Dog-goback" onClick={this.props.history.goBack}>Go Back</button>
+            </div>
         );
     }
 }

@@ -1,0 +1,39 @@
+.Dogs {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.Dogs-title {
+    font-weight: 200;
+    font-size: 70px;
+}
+
+.Dogmainbutton {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+    justify-content: space-evenly;
+}
+
+.Dogmainbutton-name {
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.Dogmainbutton-name:hover {
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.Dogmainbutton-img {
+    box-shadow: 0px 14px 8px -3px rgba(0,0,0,0.35);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.Dogs-dogmainbuttons {
+    display: flex;
+    justify-content: center;
+}

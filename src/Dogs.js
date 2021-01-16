@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import DogMainButton from './DogMainButton';
+import './styles/Dogs.css';
 
 class Dogs extends Component {
     render() {
         return(
-            <div>
-                <h1>Click a Dog</h1>
-                {this.props.dogs.map(dog => {return <DogMainButton { ...dog }/>})}
+            <div className='Dogs'>
+                <h1 className='Dogs-title'>Click a Dog!</h1>
+                <div className='Dogs-dogmainbuttons'>
+                    {this.props.dogs.map(dog => {return <DogMainButton { ...dog } history={ this.props.history }/>})}
+                </div>
             </div>
         );
     }
