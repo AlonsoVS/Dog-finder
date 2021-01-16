@@ -6,7 +6,7 @@ class Dogs extends Component {
         return(
             <div>
                 <h1>Click a Dog</h1>
-                {this.props.dogs.map(dog => {return <DogMainButton dog={dog.name}/>})}
+                {this.props.dogs.map(dog => {return <DogMainButton { ...dog }/>})}
             </div>
         );
     }
