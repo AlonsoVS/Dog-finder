@@ -54,7 +54,6 @@ function App() {
       </nav>
       <Switch>
         <Route exact path='/dogs/:dog' render={routeProps => <Dog { ...routeProps } 
-              /* dog={App.defaultProps.dogs.filter(dog => dog.name === routeProps.match.params.dog)[0]} */
               { ...App.defaultProps.dogs.filter(dog => dog.name === routeProps.match.params.dog)[0] } />}/>
         <Route path='/' render={routeProps => <Dogs { ...routeProps } { ...App.defaultProps } />}/>
       </Switch>

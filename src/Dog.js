@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 class Dog extends Component {
+
     render() {
         return(
             <>
@@ -8,6 +9,7 @@ class Dog extends Component {
                 <img src={this.props.src}/>
                 <h2 className="Dogage">{this.props.age}</h2>
                 {this.props.facts.map( fact => {return <h3 className="Dogfacts">{fact}</h3>} )}
+                <button className="Goback" onClick={this.props.history.goBack}>Go Back</button>
             </>
         );
     }
