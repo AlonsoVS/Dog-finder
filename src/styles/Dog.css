@@ -1,40 +1,12 @@
-.Dog {
-    width: max-content;
-    margin: auto;
-    box-shadow: 2px 15px 7px -4px rgba(0,0,0,0.35);
-    background: white;
-    text-align: justify;
-    border-radius: 3px;
+.Dog-card {
+    box-shadow: 0px 14px 8px -3px rgba(0,0,0,0.35);
 }
 
-.Dog-name {
-    text-indent: 14px;
+.Dog-card img {
+    filter: grayscale();
+    transition: 0.4s filter ease;
 }
 
-.Dog-img {
-    height: 400px;
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
-}
-
-.Dog-age {
-    text-indent: 14px;
-}
-
-.Dog-facts {
-    text-indent: 14px;
-}
-
-.Dog-goback {
-    margin: 1rem;
-    color: white;
-    background: #00b0b6;
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-    height: 30px;
-    width: 70px;
-}
-
-.Dog-goback:active {
+.Dog-card:hover img {
+    filter: none;
 }

@@ -6,9 +6,9 @@ class DogMainButton extends Component {
     }
     render() {
         return(
-            <div className='Dogmainbutton'>
-                <img className='Dogmainbutton-img' src={this.props.src}/>
-                <h1 className='Dogmainbutton-name' onClick={this.handleClick}>{this.props.name}</h1>
+            <div className='Dog-main col-md-6 col-lg-3 text-center'>
+                <img className='Dogmainbutton-img' src={this.props.src} alt={this.props.name}/>
+                <h1 className='Dogmainbutton-name underline mt-3' onClick={this.handleClick}>{this.props.name}</h1>
             </div>
         );
     }
